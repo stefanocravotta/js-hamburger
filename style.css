@@ -60,6 +60,7 @@ header {
     min-width: 100vw;
     min-height: 100vh;
     background: #2B3F58;
+    z-index: 999999;
 }
 .hamburger-menu ul {
     display: flex;
@@ -84,6 +85,67 @@ header {
     font-size: 35px;
     text-decoration: none;
 }
+
+/* SECTION SC */
+
+section .container-fluid{
+    border-radius: 40px;
+    background-color: #2B3F58;
+    overflow: hidden;
+}
+
+
+#la-tua-scelta{
+    height: 700px;
+    background-image: url(https://c.tenor.com/H_loBGkJiMYAAAAd/code-daddycoolcool.gif);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#la-tua-scelta .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.bcg-white{
+    background-color: rgba(43, 63, 88, .2);
+}
+.bgc-hide{
+    background-color: rgba(43, 63, 88, 1);
+}
+
+.congratulazioni{
+    width: 20%;
+    background-image: url(https://i.pinimg.com/originals/0a/04/29/0a04292399194f3af977965d4efb72e7.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.row .col-4 img{
+    width: 100%;
+    border-radius: 40px;
+
+}
+.row .col-8{
+    border-radius: 30px;
+    padding: 15px;
+    background-color: rgba(43, 63, 88);
+
+}
+table {
+    width: 70%;
+}
+table td{
+    padding: 10px;
+}
+
+/* /SECTION SC */
+
+
 @media screen and (max-width: 1000px)
 {
     .header-right ul {

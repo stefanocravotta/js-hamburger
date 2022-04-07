@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <title>Hamburger Menu</title>
     </head>
@@ -12,7 +13,7 @@
 
         <header>
             <div class="header-left">
-                <img src="http://boolean.careers/images/misc/logo.png" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/256px-Electron_Software_Framework_Logo.svg.png" alt="">
             </div>
             <div class="header-right">
                 <ul>
@@ -53,6 +54,70 @@
                 </a>
             </div>
         </header>
+        <section class="container">
+            <div class="container-fluid text-center text-white mt-5 pt-2 px-0">
+                <h2>Scegli il corso che fa per te</h2>
+                <div class="row row-cols-3 py-5">
+                    <div class="col">
+                        <h4>Scegli il tuo indirizzo</h4>
+                        <select name="" id="indirizzo">
+                            <option value="Front-End Developer">Front-End Developer</option>
+                            <option value="Back-End Developer">Back-End Developer</option>
+                            <option value="Full-stack Developer" selected>Full-stack Developer</option>
+                        </select> 
+                    </div>
+                    <div class="col">
+                        <h4>Scegli la tua modalit&agrave;</h4>
+                        <select name="" id="modalita">
+                            <option value="Full-intensive">Full-intensive ( 6 mesi )</option>
+                            <option value="Intensive">Intensive ( 12 mesi )</option>
+                            <option value="Scialla Mode">SciallaMode ( 3 anni )</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <h4>Inserisci la tua et&agrave;</h4>
+                        <input id="anni" type="number">
+                    </div>
+                </div>
+                <button type="button" id="genera" class="btn btn-outline-warning me-2 my-3">Genera</button>
+                <button type="button" id="annulla" class="btn btn-outline-warning ms-2 my-3" >Annulla</button>
+                <div id="la-tua-scelta" class="clearfix">
+                    <div id="overlay" class="overlay bgc-hide bcg-white d-flex align-items-center">
+                        <div id="biglietto" class="container pt-4 d-none">
+                            <h2>Ecco la scelta migliore per te</h2>
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="https://i.kym-cdn.com/photos/images/newsfeed/002/052/327/b2d" alt="">
+                                </div>
+                                <div class="col-8 d-flex">
+                                    <div class="congratulazioni">Congratulazioni</div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Indirizzo</th>
+                                                <th>Modalit&agrave;</th>
+                                                <th>Et&agrave;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td id="scelta-indirizzo">Front-End Developer</td>
+                                                <td id="scelta-modalita" >Front-End Developer</td>
+                                                <td id="scelta-eta">Front-End Developer</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="main.js" charset="utf-8"></script>
     </body>
