@@ -6,12 +6,11 @@ const exitItem = document.querySelector('.close');
 
 
 hamburgerMenu.addEventListener('click', function(){
-    hamburgerMenuContent.style.display ="block";
+    hamburgerMenuContent.classList.add('active');
 })
 
 exitItem.addEventListener('click', function(){
-    hamburgerMenuContent.style.display ="none";
-
+    hamburgerMenuContent.classList.remove('active');
 })
 
 const biglietto = document.getElementById('biglietto');
